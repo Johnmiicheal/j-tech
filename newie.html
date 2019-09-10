@@ -1,0 +1,21 @@
+<?php foreach($Phones as $Phone): ?>
+<section id="phones d-flex">
+  <div class="container">
+      <div class="card mb-3" style="width: 18rem;">
+<img src="<?php echo $Phone->getImage()?>" class="card-img-top" alt="...">
+<div class="card-body">
+<h4 class="card-title"><?php echo $Phone->getBrand()  ?></h4>
+
+<h5 class="card-title"><?php echo $Phone->getName()  ?></h5>
+<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<button type="button" class="btn btn-primary">
+<?php echo $Phone->getPrice()  ?><span class="badge badge-light"></span>
+</button>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<?php endforeach  ?>
